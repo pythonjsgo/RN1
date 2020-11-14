@@ -3,6 +3,24 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="97907035-3d83-45db-a279-72f9f4436b01" name="Default Changelist" comment="test change">
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/blog_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blog_page.html" afterDir="false" />
@@ -62,11 +80,50 @@
       <workItem from="1605293901351" duration="469000" />
       <workItem from="1605364320598" duration="1846000" />
       <workItem from="1605387330760" duration="1353000" />
+      <workItem from="1605388697241" duration="330000" />
     </task>
+    <task id="LOCAL-00001" summary="ide shit">
+      <created>1605388822871</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605388822871</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test change">
+      <created>1605388953313</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605388953313</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test change">
+      <created>1605388994897</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605388994897</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ide shit" />
+    <MESSAGE value="test change" />
+    <option name="LAST_COMMIT_MESSAGE" value="test change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="836" y="180" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605364346138">
@@ -81,10 +138,14 @@
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
     <state width="235" height="500" key="HiddenNamespacesPopup/0.0.1920.1044@0.0.1920.1044" timestamp="1605293914652" />
-    <state x="1040" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605293421258">
+    <state x="1040" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605388830113">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
-    <state x="1040" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1605293421258" />
+    <state x="1040" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1605388830113" />
+    <state x="1067" y="559" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605388978949">
+      <screen x="0" y="0" width="1920" height="1044" />
+    </state>
+    <state x="1067" y="559" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1044@0.0.1920.1044" timestamp="1605388978949" />
     <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1605034270398">
       <screen x="0" y="0" width="1920" height="1044" />
     </state>
