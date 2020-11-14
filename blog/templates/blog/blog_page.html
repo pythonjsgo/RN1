@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% load static %}
+{% load article_extras %}
+{% block body_class %}
+    template-homepage{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+{% endblock extra_css %}
+{% block extra_js %}
+    <script src="https://kit.fontawesome.com/4f7f467e89.js" crossorigin="anonymous"></script>
+    <script src="{%  static 'js/theme.js' %}"></script>
+{% endblock extra_js %}
+
+
+
+{% block content %}
+
+
+
+    <div class="content container">
+        <main class="main">
+            <article class="article">
+                <div class="article__subject"> {{ page.theme }} </div>
+                <h1 class="article__title"> {{ page.title }}</h1>
+                <div class="article__meta meta">
+                    <span class="meta__time">{{ page.date }}</span>
+                    <div class="meta__author author">
+                        <div class="author__image"></div>
+                            <p class="author__name">{{ page.author }}</p>
+                    </div>
+                    <a href="pageTwo.html#" class="meta__link">Поделиться</a>
+                    <div class="meta__socials-wrapper">
+                        <a href="pageTwo.html#" class="meta__social-link"></a>
+                        <a href="pageTwo.html#" class="meta__social-link"></a>
+                        <a href="pageTwo.html#" class="meta__social-link"></a>
+                        <a href="pageTwo.html#" class="meta__social-link"></a>
+                        <a href="pageTwo.html#" class="meta__social-link"></a>
+                    </div>
+                </div>
+                    {% load wagtailimages_tags %}
+                    {% image page.preview_image fill-400x200 as preview_image %}
+                    <img src={{ preview_image.url}} alt="preview_image" class="article__image">
+                    {% load wagtailcore_tags %}
+                    <div class="article__text">{{ page.body|richtext }} </div>
+            </article>
+        </main>
+        <aside class="aside">
+            <div class="aside__world-news world-news">
+                <div class="world-news__header">
+                    <h2 class="world-news__title">Все новости мира</h2>
+                </div>
+                <div class="world-news__body">
+                    <ul class="world-news__list">
+                        {% for article in self.get_parent.specific.get_children.specific|last_items:3  %}
+                            <li class="world-news__item">
+                                <p class="world-news__text"><a href="{{ article.url }}" class="world-news__time">{{ article.date }}</a> {{ article.title }}</p>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="world-news__footer">
+                                <a href="pageTwo.html#" class="world-news__btn btn btn-small">Смотреть ещё</a>
+                </div>
+            </div>
+            <article class="news-card small brown white-text"
+                style="background: url(images/news-image05.jpg) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                </div>
+            </article>
+        </aside>
+    </div>
+    <div class="container">
+        <div class="news-box">
+            {% with self.get_parent.specific.get_children.specific|selection_by_num:1 as article %}
+                            {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card medium gold"
+                style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <div class="news-card__meta">{{ article.author }} 14:11</div>
+                    <h2><a href="{{ article.url }}" class="news-card__title">{{ article.title }}</a></h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+            {% with self.get_parent.specific.get_children.specific|selection_by_num:2 as article %}
+                            {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card medium blue"
+                style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <div class="news-card__meta">{{ article.author }} 14:11</div>
+                    <h2><a href="{{ article.url }}" class="news-card__title">{{ article.title }}</a></h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+            {% with self.get_parent.specific.get_children.specific|selection_by_num:3 as article %}
+                            {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card medium gray"
+                style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <div class="news-card__meta">{{ article.author }} 14:11</div>
+                    <h2><a href="{{ article.url }}" class="news-card__title">{{ article.title }}</a></h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+
+        </div>
+        <div class="adv">
+            <div class="adv__banner">место для рекламы</div>
+            <button class="adv__btn btn btn-small">Отключить рекламу</button>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{%  static 'js/script.min.js' %}"></script>
+
+
+{% endblock content %}

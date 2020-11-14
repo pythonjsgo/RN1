@@ -1,0 +1,333 @@
+{% extends "base.html" %}
+{% load static %}
+{% load article_extras %}
+{% block body_class %}
+    template-homepage{% endblock %}
+
+{% block extra_css %}
+    {% comment %}
+    <link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
+    {% endcomment %}
+     <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+{% endblock extra_css %}
+{% block extra_js %}
+    <script src="https://kit.fontawesome.com/4f7f467e89.js" crossorigin="anonymous"></script>
+    <script src="{%  static 'js/theme.js' %}"></script>
+{% endblock extra_js %}
+
+{% block content %}
+    <a href="/#" class="up-btn"></a>
+
+    <section class="socials container">
+        <div class="socials__wrapper">
+            <div class="socials__social-box">
+                <iframe id="tgw_5f8a158483ba88d70f8b4572" frameborder="0" scrolling="yes" horizontalscrolling="no" verticalscrolling="no" width="100%" height="100%" async></iframe><script>document.addEventListener("DOMContentLoaded",function(){document.getElementById("tgw_5f8a158483ba88d70f8b4572").setAttribute("src","https://tgwidget.com/channel/v2.0/?id=5f8a158483ba88d70f8b4572")})</script>
+            </div>
+            <div class="socials__social-box">
+                <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="light" href="https://twitter.com/smirusnews">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+        </div>
+        <div class="socials__world-news world-news">
+            <div class="world-news__header">
+                <h2 class="world-news__title">Все новости мира</h2>
+            </div>
+            <div class="world-news__body">
+                <ul class="world-news__list">
+
+                    {% for article in self.get_children.specific|last_items:3  %}
+
+                    <li class="world-news__item">
+                        <p class="world-news__text"><a href="{{ article.url }}" class="world-news__time">{{ article.date }}</a> {{ article.title }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="world-news__footer">
+                <a href="/" class="world-news__btn btn btn-small">Смотреть ещё</a>
+            </div>
+        </div>
+    </section>  <!-- !!!-->
+    <section class="interviewees container">
+        <h2 class="interviewees__title slider-title">Герои наших репортажей</h2>
+        <div class="interviewees__slider-box owl-carousel slider small">
+            {% load wagtailimages_tags %}
+            {% for image in page.images %}
+                {% image image.value fill-800x600 as lenta_image %}
+                <a href="/" class="slider__item" style="background: url({{ lenta_image.url }}) top / auto no-repeat;"></a>
+
+            {% endfor %}
+        </div>
+    </section>  <!-- !!! OUR HEROS!-->
+<!-- !!! PIZDEC PASSED!-->
+
+    <main class="main container">
+        <div class="news-box">
+
+
+            {% with self.get_children.specific|selection_by_num:0 as article %}
+                {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card big gray" style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <small class="news-card__meta">{{ article.author }} 14:11</small>
+                    <h2><a href="{{ article.url }}" class="news-card__title"> {{ article.title }}</a>
+                    </h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}...
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+
+            {% with self.get_children.specific|selection_by_num:1 as article %}
+                {% image article.preview_image fill-601x400  as image %}
+            <article class="news-card big purple" style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <small class="news-card__meta">{{ article.author }} 14:11</small>
+                    <h2><a href="{{ article.url }}" class="news-card__title"> {{ article.title }}</a>
+                    </h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}...
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+
+            {% with self.get_children.specific|selection_by_num:2 as article %}
+                {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card big beige" style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <small class="news-card__meta">{{ article.author }} 14:11</small>
+                    <h2><a href="{{ article.url }}" class="news-card__title"> {{ article.title }}</a>
+                    </h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}...
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+
+            {% with self.get_children.specific|selection_by_num:3 as article %}
+                {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card big gray-text black" style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <small class="news-card__meta">{{ article.author }} 14:11</small>
+                    <h2><a href="{{ article.url }}" class="news-card__title"> {{ article.title }}</a>
+                    </h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}...
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+
+        </div>
+        <div class="adv">
+            <div class="adv__banner">место для рекламы</div>
+            <button class="adv__btn btn btn-small">Отключить рекламу</button>
+        </div>
+        <!--section class="reporting container">
+            <h2 class="reporting__title slider-title">Наши фото репортажи</h2>
+            <div class="reporting__slider-box owl-carousel slider medium">
+                <a href="index.html#" class="slider__item"
+                    style="background: url(images/reporting-image01.jpg) top / auto no-repeat;">
+                </a>
+                <a href="index.html#" class="slider__item"
+                    style="background: url(images/reporting-image02.jpg) top / auto no-repeat;">
+                </a>
+                <a href="index.html#" class="slider__item"
+                    style="background: url(images/reporting-image03.jpg) top / auto no-repeat;">
+                </a>
+            </div>
+        </section -->
+        <div class="news-box">
+            {% with self.get_children.specific|selection_by_num:4 as article %}
+                {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card small brown white-text"
+                style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <div class="news-card__meta">{{ article.author }} 14:11</div>
+                    <h2><a href="index.html#" class="news-card__title">{{ article.title }}</a></h2>
+                    <p class="news-card__text">
+                       {{ article.intro }}
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+
+            {% with self.get_children.specific|selection_by_num:5 as article %}
+                {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card small gray white-text"
+                style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <div class="news-card__meta">{{ article.author }} 14:11</div>
+                    <h2><a href="index.html#" class="news-card__title">{{ article.title }}</a></h2>
+                    <p class="news-card__text">
+                       {{ article.intro }}
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+
+            {% with self.get_children.specific|selection_by_num:6 as article %}
+                            {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card link" style="background: url({{ image.url }}) top / auto no-repeat;">
+                <a href="{{ article.url }}" class="news-card__bg"></a>
+                <h2><a href="{{ article.url }}" class="news-card__title">{{ article.title }}</a></h2>
+                <small class="news-card__subtitle">{{ article.theme }}</small>
+            </article>
+            {% endwith %}
+        </div>
+        <div class="news-box">
+            {% with self.get_children.specific|selection_by_num:7 as article %}
+                            {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card medium gold"
+                style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <div class="news-card__meta">{{ article.author }} 14:11</div>
+                    <h2><a href="{{ article.url }}" class="news-card__title">{{ article.title }}</a></h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+            {% with self.get_children.specific|selection_by_num:8 as article %}
+                            {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card medium blue"
+                style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <div class="news-card__meta">{{ article.author }} 14:11</div>
+                    <h2><a href="{{ article.url }}" class="news-card__title">{{ article.title }}</a></h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+            {% with self.get_children.specific|selection_by_num:9 as article %}
+                            {% image article.preview_image fill-601x400 as image %}
+            <article class="news-card medium gray"
+                style="background: url({{ image.url }}) top / auto no-repeat;">
+                <div class="news-card__bg"></div>
+                <div class="news-card__content">
+                    <div class="news-card__meta">{{ article.author }} 14:11</div>
+                    <h2><a href="{{ article.url }}" class="news-card__title">{{ article.title }}</a></h2>
+                    <p class="news-card__text">
+                        {{ article.intro }}
+                    </p>
+                    <a href="{{ article.url }}" class="news-card__btn btn btn-big">Читать дальше</a>
+                </div>
+            </article>
+            {% endwith %}
+
+
+        </div>
+        <!--section class="world-news-slider owl-carousel slider">
+            <div class="world-news-slider__item world-news big">
+                <div class="world-news__header">
+                    <h2 class="world-news__title">Все новости мира</h2>
+                </div>
+                <div class="world-news__body">
+                    <ul class="world-news__list">
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="world-news-slider__item world-news big">
+                <div class="world-news__header">
+                    <h2 class="world-news__title">Все новости мира</h2>
+                </div>
+                <div class="world-news__body">
+                    <ul class="world-news__list">
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                        <li class="world-news__item">
+                            <p class="world-news__text"><a href="index.html#" class="world-news__time">11:42</a> В Греции для
+                                публики откроют Акрополь</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section-->
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{%  static 'js/script.min.js' %}"></script>
+
+
+
+{% endblock content %}
