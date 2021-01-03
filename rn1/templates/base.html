@@ -27,7 +27,9 @@
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
-        <header class="header">
+
+        {% wagtailuserbar %}
+            <header class="header">
         <div class="container header__wrapper">
                 <a href="/" class="header__logo">
                     <img src="{% static 'images/logo.png' %}" alt="RusNews_logo">
@@ -86,8 +88,6 @@
             <button class="header__theme-btn" id="theme-btn"></button>
         </div>
     </header>
-        {% wagtailuserbar %}
-
         {% block content %}{% endblock %}
 
         {# Global javascript #}

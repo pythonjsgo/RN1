@@ -22,13 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97907035-3d83-45db-a279-72f9f4436b01" name="Default Changelist" comment="test change">
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/blog_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blog_page.html" afterDir="false" />
+    <list default="true" id="97907035-3d83-45db-a279-72f9f4436b01" name="Default Changelist" comment="test data">
+      <change afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn1/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,14 +50,17 @@
   <component name="ProjectId" id="1jmvQeM8etxbbKCNLm56Brfk1Gx" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -80,7 +89,17 @@
       <workItem from="1605293901351" duration="469000" />
       <workItem from="1605364320598" duration="1846000" />
       <workItem from="1605387330760" duration="1353000" />
-      <workItem from="1605388697241" duration="330000" />
+      <workItem from="1605388697241" duration="2510000" />
+      <workItem from="1605554483638" duration="19000" />
+      <workItem from="1605813334486" duration="915000" />
+      <workItem from="1605894716576" duration="615000" />
+      <workItem from="1605969034913" duration="4000" />
+      <workItem from="1605991767961" duration="28000" />
+      <workItem from="1606563367494" duration="960000" />
+      <workItem from="1606575492969" duration="767000" />
+      <workItem from="1608973416967" duration="811000" />
+      <workItem from="1608976008782" duration="1777000" />
+      <workItem from="1609675749355" duration="474000" />
     </task>
     <task id="LOCAL-00001" summary="ide shit">
       <created>1605388822871</created>
@@ -103,7 +122,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605388994897</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="HTML templates update">
+      <created>1605389059185</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605389059185</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pipenv added">
+      <created>1605389246145</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605389246145</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test data">
+      <created>1605391374419</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605391374419</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,36 +159,15 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="ide shit" />
     <MESSAGE value="test change" />
-    <option name="LAST_COMMIT_MESSAGE" value="test change" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="836" y="180" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605364346138">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="836" y="180" width="1071" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1044@0.0.1920.1044" timestamp="1605364346138" />
-    <state x="574" y="278" key="FileChooserDialogImpl" timestamp="1605210172301">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="574" y="278" key="FileChooserDialogImpl/0.0.1920.1044@0.0.1920.1044" timestamp="1605210172301" />
-    <state width="235" height="500" key="HiddenNamespacesPopup" timestamp="1605293914652">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state width="235" height="500" key="HiddenNamespacesPopup/0.0.1920.1044@0.0.1920.1044" timestamp="1605293914652" />
-    <state x="1040" y="258" key="Vcs.Push.Dialog.v2" timestamp="1605388830113">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="1040" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1044@0.0.1920.1044" timestamp="1605388830113" />
-    <state x="1067" y="559" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605388978949">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="1067" y="559" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1044@0.0.1920.1044" timestamp="1605388978949" />
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1605034270398">
-      <screen x="0" y="0" width="1920" height="1044" />
-    </state>
-    <state x="1103" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1044@0.0.1920.1044" timestamp="1605034270398" />
+    <MESSAGE value="HTML templates update" />
+    <MESSAGE value="pipenv added" />
+    <MESSAGE value="test data" />
+    <option name="LAST_COMMIT_MESSAGE" value="test data" />
   </component>
 </project>
