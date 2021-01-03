@@ -22,7 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97907035-3d83-45db-a279-72f9f4436b01" name="Default Changelist" comment="saving everything before">
+    <list default="true" id="97907035-3d83-45db-a279-72f9f4436b01" name="Default Changelist" comment="search hint, templates refactor to posts variable format &#10;&#10;blog to flex refactor, new app - blog .   &#10;&#10;&#10;were - domain/article&#10;now - domain/blog/article">
       <change afterPath="$PROJECT_DIR$/blog/migrations/0002_auto_20210103_1428.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/blog/migrations/0003_auto_20210103_1535.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/blog/templates/blog/blog_listing_page.html" afterDir="false" />
@@ -143,7 +143,7 @@
       <workItem from="1606575492969" duration="767000" />
       <workItem from="1608973416967" duration="811000" />
       <workItem from="1608976008782" duration="1777000" />
-      <workItem from="1609675749355" duration="18450000" />
+      <workItem from="1609675749355" duration="18755000" />
     </task>
     <task id="LOCAL-00001" summary="ide shit">
       <created>1605388822871</created>
@@ -194,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609676255278</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="search hint, templates refactor to posts variable format &#10;&#10;blog to flex refactor, new app - blog .   &#10;&#10;&#10;were - domain/article&#10;now - domain/blog/article">
+      <created>1609704590677</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1609704590677</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +259,8 @@
     <MESSAGE value="pipenv added" />
     <MESSAGE value="test data" />
     <MESSAGE value="saving everything before" />
-    <option name="LAST_COMMIT_MESSAGE" value="saving everything before" />
+    <MESSAGE value="search hint, templates refactor to posts variable format &#10;&#10;blog to flex refactor, new app - blog .   &#10;&#10;&#10;were - domain/article&#10;now - domain/blog/article" />
+    <option name="LAST_COMMIT_MESSAGE" value="search hint, templates refactor to posts variable format &#10;&#10;blog to flex refactor, new app - blog .   &#10;&#10;&#10;were - domain/article&#10;now - domain/blog/article" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
