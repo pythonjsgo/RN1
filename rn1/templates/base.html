@@ -19,6 +19,11 @@
 
         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/rn1.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -35,23 +40,23 @@
                     <img src="{% static 'images/logo.png' %}" alt="RusNews_logo">
                 </a>
                      <div class="header__search search">
-                <input type="text" class="search__input">
+                <input type="text" class="search__input"  placeholder="Поиск...">
                 <button class="search__btn" id="search-btn"></button>
             </div>
             <div class="header__socials">
-                <a href="https://vk.com/smirusnews" class="header__social-link vk">
+                <a href="{{ settings.site_settings.SocialMediaSettings.vk }}" class="header__social-link vk">
                     <span class="fab fa-vk"></span>
                 </a>
-                <a href="https://www.facebook.com/SmiRusNews/" class="header__social-link facebook">
+                <a href="{{ settings.site_settings.SocialMediaSettings.facebook }}" class="header__social-link facebook">
                     <span class="fab fa-facebook-f"></span>
                 </a>
-                <a href="https://ok.ru/group/57299177046044" class="header__social-link odn">
+                <a href="{{ settings.site_settings.SocialMediaSettings.ok }}" class="header__social-link odn">
                     <span class="fab fa-odnoklassniki"></span>
                 </a>
-                <a href="https://www.youtube.com/smirusnews" class="header__social-link youtube">
+                <a href="{{ settings.site_settings.SocialMediaSettings.youtube }}" class="header__social-link youtube">
                     <span class="fab fa-youtube"></span>
                 </a>
-                <a href="https://zen.yandex.ru/id/5e5e6e5107fa2c0a6634b4e0" class="header__social-link YZ">
+                <a href="{{ settings.site_settings.SocialMediaSettings.dzen }}" class="header__social-link YZ">
                     <!-- <span class="fab fa-yandex"></span> -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48" fill="none">
                         <path class="icon" fill-rule="evenodd" clip-rule="evenodd"
@@ -75,13 +80,13 @@
                         </defs>
                     </svg>
                 </a>
-                <a href="https://twitter.com/smirusnews" class="header__social-link twitter">
+                <a href="{{ settings.site_settings.SocialMediaSettings.twitter }}" class="header__social-link twitter">
                     <span class="fab fa-twitter"></span>
                 </a>
-                <a href="https://t.me/smirusnews" class="header__social-link telegram">
+                <a href="{{ settings.site_settings.SocialMediaSettings.telegram }}" class="header__social-link telegram">
                     <span class="fab fa-telegram-plane"></span>
                 </a>
-                <a href="https://instagram.com/smirusnews/" class="header__social-link instagram">
+                <a href="{{ settings.site_settings.SocialMediaSettings.instagram }}" class="header__social-link instagram">
                     <span class="fab fa-instagram"></span>
                 </a>
             </div>
@@ -91,6 +96,9 @@
         {% block content %}{% endblock %}
 
         {# Global javascript #}
+
+
+
         <footer class="footer container">
         <a href="index.html#" class="footer__logo">
             <img src="{% static 'images/logo.png'%}" alt="Rus News">
@@ -109,7 +117,10 @@
     </footer>
 
         <script type="text/javascript" src="{% static 'js/rn1.js' %}"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{%  static 'js/script.min.js' %}"></script>
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         {% block extra_js %}
             <script src="{%  static 'js/theme.js' %}"></script>
         {% endblock %}

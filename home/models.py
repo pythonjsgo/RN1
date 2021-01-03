@@ -7,6 +7,8 @@ from wagtail.core.models import Page
 from wagtail.images.blocks import ImageChooserBlock
 from wagtail.images.edit_handlers import ImageChooserPanel
 
+from blog.models import BlogDetailPage
+
 
 class HomePage(Page):
 
@@ -18,3 +20,10 @@ class HomePage(Page):
     #    ImageChooserPanel('image'),
         StreamFieldPanel('images')
     ]
+
+    def get_context(self, request, *args, **kwargs):
+        context = super().get_context(request, *args, **kwargs)
+        context["posts"] = BlogDetailPage.objects.live().public()
+
+        return context
+

@@ -8,27 +8,13 @@ from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.search import index
 
 
-class BlogListingPage(Page):
-
-    custom_title = models.CharField(max_length=100, blank=True, null=True)
-
-    def get_context(self, request, *args, **kwargs):
-        context = super().get_context(request, *args, **kwargs)
-        context["posts"] = BlogDetailPage.objects.live().public()
-        return context
-
-
-class BlogDetailPage(Page):
-
-    template = "blog/blog_page.html"
-
+class BlogPage(Page):
     date = models.DateTimeField("Post date")
     author = models.CharField(max_length=30, null=True)
     preview_image = models.ForeignKey(  'wagtailimages.Image', on_delete=models.CASCADE, related_name='+' , null = True)
     intro = models.CharField(max_length=250)
     body = RichTextField()
     theme = models.CharField(max_length=20)
-
 
 
 
@@ -46,9 +32,3 @@ class BlogDetailPage(Page):
         FieldPanel('intro'),
         FieldPanel('body', classname="full"),
     ]
-
-    def get_context(self, request, *args, **kwargs):
-        context = super().get_context(request, *args, **kwargs)
-        context["posts"] = BlogDetailPage.objects.live().public()
-
-        return context

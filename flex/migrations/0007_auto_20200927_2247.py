@@ -6,17 +6,17 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blog', '0007_auto_20200927_2247'),
+        ('flex', '0006_auto_20200927_2244'),
     ]
 
     operations = [
         migrations.RemoveField(
             model_name='blogpage',
-            name='sdkhslkjdh',
+            name='author',
         ),
         migrations.AddField(
             model_name='blogpage',
-            name='author',
-            field=models.CharField(max_length=30, null=True),
+            name='sdkhslkjdh',
+            field=models.CharField(max_length=999, null=True),
         ),
     ]

@@ -8,7 +8,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('wagtailimages', '0022_uploadedimage'),
-        ('blog', '0009_auto_20200927_2252'),
+        ('flex', '0009_auto_20200927_2252'),
     ]
 
     operations = [

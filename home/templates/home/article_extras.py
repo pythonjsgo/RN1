@@ -4,7 +4,9 @@ register = template.Library()
 
 @register.filter
 def last_items(value, count = 3):
-    return value[len(value)-count:]
+    value = value[len(value)-count:]
+    value.reverse()
+    return value
 
 @register.filter
 def selection_from_last_items(value, first = 1, second = 3):
@@ -13,7 +15,7 @@ def selection_from_last_items(value, first = 1, second = 3):
 
 @register.filter
 def selection_by_num(value, number):
-    value.reverse()
-    return value[number]
+
+    return value[len(value)-number-1]  # custom reverse
 
 

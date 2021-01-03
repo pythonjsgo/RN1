@@ -25,6 +25,9 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 
 INSTALLED_APPS = [
     'blog',
+    'wagtail.contrib.settings',
+    'site_settings',
+    'flex',
     'home',
     'search',
 
@@ -78,6 +81,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'wagtail.contrib.settings.context_processors.settings'
             ],
             'libraries':{
                         'article_extras': 'home.templates.home.article_extras',

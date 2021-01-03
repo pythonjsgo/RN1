@@ -52,7 +52,7 @@
                 </div>
                 <div class="world-news__body">
                     <ul class="world-news__list">
-                        {% for article in posts|last_items:3  %}
+                        {% for article in self.get_parent.specific.get_children.specific|last_items:3  %}
                             <li class="world-news__item">
                                 <p class="world-news__text"><a href="{{ article.url }}" class="world-news__time">{{ article.date }}</a> {{ article.title }}</p>
                             </li>
