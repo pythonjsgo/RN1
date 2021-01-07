@@ -5,8 +5,9 @@ name = "pypi"
 
 [packages]
 wagtail = ">=2.10,<2.11"
-Django = "<3.2,>=3.1"
-pillow = "*"
+Django = ">=3.1,<3.2"
+Pillow = "*"
+wagtailnews = "*"
 
 [dev-packages]
 

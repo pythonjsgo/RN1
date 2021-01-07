@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="97907035-3d83-45db-a279-72f9f4436b01" name="Default Changelist" comment="search hint, templates refactor to posts variable format &#10;&#10;blog to flex refactor, new app - blog .   &#10;&#10;&#10;were - domain/article&#10;now - domain/blog/article">
+    <list default="true" id="1600c623-f90e-4731-b33e-87f5f59ac036" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/media/images/04ef5e1743f2123165f573616c533885.max-165x165.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/images/Moscow-High-Quality-Wallpapers.2e16d0ba.fill-150x90.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/original_images/04ef5e1743f2123165f573616c533885.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/templates/blog/blog_listing_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blog_listing_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/templates/blog/blog_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/flex/templates/blog/blog_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/static/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/js/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/home/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/home_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/css/listing_page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0002_auto_20200927_2219.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0003_blogpage_theme.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0004_blogpage_author.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0005_auto_20200927_2244.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0006_auto_20200927_2244.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0007_auto_20200927_2247.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0008_auto_20200927_2247.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0009_auto_20200927_2252.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/0010_blogpage_preview_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/feed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/templates/blog/blog_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flex/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn1/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/settings/base.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rn1/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search/templates/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/search/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +49,11 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="010927e4-fd10-4e47-bba8-d6ae84c719ef" />
-  <component name="ProjectId" id="1jmvQeM8etxbbKCNLm56Brfk1Gx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <OptionsSetting value="false" id="Update" />
+  <component name="ProjectId" id="1mlUkPIciV6KttkIkAgz7RdMN0Z" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -63,114 +62,21 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="97907035-3d83-45db-a279-72f9f4436b01" name="Default Changelist" comment="" />
-      <created>1604422068088</created>
+      <changelist id="1600c623-f90e-4731-b33e-87f5f59ac036" name="Default Changelist" comment="" />
+      <created>1610067816841</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1604422068088</updated>
-      <workItem from="1604422069467" duration="5003000" />
-      <workItem from="1604435168435" duration="4288000" />
-      <workItem from="1604472566850" duration="1277000" />
-      <workItem from="1604497112310" duration="1229000" />
-      <workItem from="1604513006584" duration="371000" />
-      <workItem from="1604516423598" duration="686000" />
-      <workItem from="1604604343353" duration="599000" />
-      <workItem from="1605018699433" duration="1573000" />
-      <workItem from="1605034083195" duration="2151000" />
-      <workItem from="1605116863998" duration="900000" />
-      <workItem from="1605126378774" duration="740000" />
-      <workItem from="1605210112172" duration="81000" />
-      <workItem from="1605293402576" duration="417000" />
-      <workItem from="1605293861981" duration="27000" />
-      <workItem from="1605293901351" duration="469000" />
-      <workItem from="1605364320598" duration="1846000" />
-      <workItem from="1605387330760" duration="1353000" />
-      <workItem from="1605388697241" duration="2510000" />
-      <workItem from="1605554483638" duration="19000" />
-      <workItem from="1605813334486" duration="915000" />
-      <workItem from="1605894716576" duration="615000" />
-      <workItem from="1605969034913" duration="4000" />
-      <workItem from="1605991767961" duration="28000" />
-      <workItem from="1606563367494" duration="960000" />
-      <workItem from="1606575492969" duration="767000" />
-      <workItem from="1608973416967" duration="811000" />
-      <workItem from="1608976008782" duration="1777000" />
-      <workItem from="1609675749355" duration="22843000" />
-      <workItem from="1609974494210" duration="7068000" />
+      <updated>1610067816841</updated>
+      <workItem from="1610067819397" duration="16140000" />
+      <workItem from="1610084799324" duration="2008000" />
     </task>
-    <task id="LOCAL-00001" summary="ide shit">
-      <created>1605388822871</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1605388822871</updated>
-    </task>
-    <task id="LOCAL-00002" summary="test change">
-      <created>1605388953313</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1605388953313</updated>
-    </task>
-    <task id="LOCAL-00003" summary="test change">
-      <created>1605388994897</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1605388994897</updated>
-    </task>
-    <task id="LOCAL-00004" summary="HTML templates update">
-      <created>1605389059185</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1605389059185</updated>
-    </task>
-    <task id="LOCAL-00005" summary="pipenv added">
-      <created>1605389246145</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1605389246145</updated>
-    </task>
-    <task id="LOCAL-00006" summary="test data">
-      <created>1605391374419</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1605391374419</updated>
-    </task>
-    <task id="LOCAL-00007" summary="saving everything before">
-      <created>1609676255278</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1609676255278</updated>
-    </task>
-    <task id="LOCAL-00008" summary="search hint, templates refactor to posts variable format &#10;&#10;blog to flex refactor, new app - blog .   &#10;&#10;&#10;were - domain/article&#10;now - domain/blog/article">
-      <created>1609704590677</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1609704590677</updated>
-    </task>
-    <task id="LOCAL-00009" summary="search hint, templates refactor to posts variable format &#10;&#10;blog to flex refactor, new app - blog .   &#10;&#10;&#10;were - domain/article&#10;now - domain/blog/article">
-      <created>1609704619745</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1609704619745</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,39 +87,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/master" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/master" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="master" />
-                </option>
-              </RecentGroup>
-            </list>
+            <State />
           </value>
         </entry>
       </map>
@@ -222,24 +96,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ide shit" />
-    <MESSAGE value="test change" />
-    <MESSAGE value="HTML templates update" />
-    <MESSAGE value="pipenv added" />
-    <MESSAGE value="test data" />
-    <MESSAGE value="saving everything before" />
-    <MESSAGE value="search hint, templates refactor to posts variable format &#10;&#10;blog to flex refactor, new app - blog .   &#10;&#10;&#10;were - domain/article&#10;now - domain/blog/article" />
-    <option name="LAST_COMMIT_MESSAGE" value="search hint, templates refactor to posts variable format &#10;&#10;blog to flex refactor, new app - blog .   &#10;&#10;&#10;were - domain/article&#10;now - domain/blog/article" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/flex/models.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

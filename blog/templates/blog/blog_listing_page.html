@@ -1,41 +1,74 @@
-{%  extends "base.html" %}
+{% extends "base.html" %}
 {% load static %}
-{% load article_extras %}
 {%  load wagtailimages_tags %}
 
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/listing_page.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 {% endblock extra_css %}
 {% block extra_js %}
     <script src="https://kit.fontawesome.com/4f7f467e89.js" crossorigin="anonymous"></script>
     <script src="{%  static 'js/theme.js' %}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-
 {% endblock extra_js %}
 
-{%  block content %}
-
-    <div class=" container" style="margin-top: 60px;">
-
-        {% for post in posts %}
-            <div class="row" style="padding-top: 30px ">
-                <div class="col-sm-3">
-                    {% image post.preview_image fill-250x250 as blog_img %}
-
-                    <img style="border-radius: .3525rem" href="{{ post.url }}" src="{{ blog_img.url }}">
-                </div>
-                <div class="col-sm-9">
-                    <a href="{{ post.url }}">
-                        {{ post.title }}
-                    </a>
-                    <br/>
-                    <p> {{ post.intro }}</p>
-                </div>
-
-            </div>
-        {% endfor %}
 
 
+{% block content %}
+    <div class="row" style="padding-top: 60px">
+        <div class="col-md-7 col-lg-7">
+			<ul class="media-list main-list">
+               {% for post in posts %}
+                   <li class="media">
+                            <a class="pull-left" href="#">
+                                {% image post.preview_image fill-150x90 as image %}
+                              <img class="media-object" src="{{ image.url }}" alt="">
+                            </a>
+                            <div class="media-body">
+                                <a href="{{ post.url }}" ><h4 class="media-heading world-news__text">{{ post.title }}</h4></a>
+                              <p class="by-author">{{ post.author }}</p>
+                            </div>
+                          </li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
-{% endblock content  %}
+
+  {# Only show pagination if there is more than one page to click through #}
+  {% if posts.paginator.num_pages > 1 %}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="pagination">
+            {% if posts.has_previous %}
+              <li class="page-item">
+                <a href="?page={{ posts.previous_page_number }}" class="page-link">
+                  <span>&laquo;</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% for page_num in posts.paginator.page_range %}
+              <li class="page-item {% if page_num == posts.number %} active{% endif %}">
+                <a href="?page={{ page_num }}" class="page-link">
+                  {{ page_num }}
+                </a>
+              </li>
+            {% endfor %}
+
+            {% if posts.has_next %}
+              <li class="page-item">
+                <a href="?page={{ posts.next_page_number }}" class="page-link">
+                  <span>&raquo;</span>
+                </a>
+              </li>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="{%  static 'js/script.min.js' %}"></script>
+{% endblock content %}

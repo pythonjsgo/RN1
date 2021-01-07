@@ -3,13 +3,15 @@ from django.urls import include, path
 from django.contrib import admin
 
 from wagtail.admin import urls as wagtailadmin_urls
+from wagtail.contrib.sitemaps.views import sitemap
 from wagtail.core import urls as wagtail_urls
 from wagtail.documents import urls as wagtaildocs_urls
 
-import flex
 from search import views as search_views
+from .feed import RssFeed, AtomFeed
 
 from .views import AboutPageView, ContactsPageView, ArticlesPageView
+
 
 
 urlpatterns = [
@@ -25,6 +27,12 @@ urlpatterns = [
     path('contacts/', ContactsPageView.as_view(), name='contacts'),
 
     path('articles/', ArticlesPageView.as_view(), name='articles'),
+
+    path('sitemap.xml', sitemap),
+
+    path('rss/', RssFeed(), name='rssfeed'),
+    path('atom/', AtomFeed(), name='atomfeed'),
+
 ]
 
 

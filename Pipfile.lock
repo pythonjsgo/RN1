@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "7ae08b5de702cfafb077497bfeb0272ec507f218f19dff7b9b47012df5f840ca"
+            "sha256": "09580d0be5ca2f50980381a77723c121a94345085cf9a025f93f7bbaabe482b0"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -249,6 +249,14 @@
             ],
             "index": "pypi",
             "version": "==2.10.2"
+        },
+        "wagtailnews": {
+            "hashes": [
+                "sha256:72a14a9b5e0e566a513449663893c3bbe08e5fee77a9c3e414c06a38642ae778",
+                "sha256:faec96f16ef0f86eb84bfc09b04a154bf5362cc0e9a08d7c91dc4899ab93e055"
+            ],
+            "index": "pypi",
+            "version": "==2.7.1"
         },
         "webencodings": {
             "hashes": [

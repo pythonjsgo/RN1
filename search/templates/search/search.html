@@ -1,19 +1,24 @@
 {% extends "base.html" %}
 {% load static wagtailcore_tags %}
-
+{%  load wagtailimages_tags %}
 {% block body_class %}template-searchresults{% endblock %}
 
 {% block title %}Search{% endblock %}
 
+
+
 {% block content %}
+    {% comment %}
     <h1>Search</h1>
 
     <form action="{% url 'search' %}" method="get">
         <input type="text" name="query"{% if search_query %} value="{{ search_query }}"{% endif %}>
         <input type="submit" value="Search" class="button">
     </form>
+    {% endcomment %}
 
     {% if search_results %}
+    <div style="padding-top: 60px">
         <ul>
             {% for result in search_results %}
                 <li>
@@ -35,4 +40,8 @@
     {% elif search_query %}
         No results found
     {% endif %}
+    </div>
+
+    <script src="{%  static 'js/theme.js' %}"></script>
 {% endblock %}
+
