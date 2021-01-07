@@ -11,6 +11,7 @@
      <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
 {% endblock extra_css %}
 {% block extra_js %}
+    <script src="{%  static 'js/script.min.js' %}"></script>
     <script src="https://kit.fontawesome.com/4f7f467e89.js" crossorigin="anonymous"></script>
     <script src="{%  static 'js/theme.js' %}"></script>
 {% endblock extra_js %}
@@ -43,7 +44,7 @@
                 </ul>
             </div>
             <div class="world-news__footer">
-                <a href="/" class="world-news__btn btn btn-small">Смотреть ещё</a>
+                <a href="/blog" class="world-news__btn btn btn-small">Смотреть ещё</a>
             </div>
         </div>
     </section>  <!-- !!!-->
@@ -241,9 +242,6 @@
 
     </main>
 
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="{%  static 'js/script.min.js' %}"></script>
 
 
 

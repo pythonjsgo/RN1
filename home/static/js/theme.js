@@ -1,5 +1,7 @@
-if (localStorage.getItem('theme')){}
+if (localStorage.getItem('theme')){
+}
 else{
     document.body.classList.toggle("black")
+
 }
 
