@@ -9,8 +9,8 @@ class RssFeed(Feed):
     description = "A blog about cyber security, web development and other tech related topics"
     feed_url = '/rss/'
     author_name = 'RusNews'
-    categories = ("python", "django", "cyber security", "android", "hacking")
-    feed_copyright = 'Copyright (c) 2019-2020, erev0s.com'
+    categories = ("RusNews", "политика", "протесты", "новости россии", "митинги")
+    feed_copyright = 'Copyright (c) 2020-2021, RusNews'
 
     language = 'ru'
 

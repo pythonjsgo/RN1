@@ -3,14 +3,18 @@
 {% load article_extras %}
 {% block body_class %}
     template-homepage{% endblock %}
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
 {% block extra_css %}
     {% comment %}
     <link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
     {% endcomment %}
-     <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
 {% endblock extra_css %}
 {% block extra_js %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="{%  static 'js/script.min.js' %}"></script>
     <script src="https://kit.fontawesome.com/4f7f467e89.js" crossorigin="anonymous"></script>
     <script src="{%  static 'js/theme.js' %}"></script>
@@ -18,10 +22,9 @@
 
 {% block content %}
     <a href="/#" class="up-btn"></a>
-
     <section class="socials container">
-        <div class="socials__wrapper">
-            <div class="socials__social-box">
+        <div class="socials__wrapper d-none d-sm-flex"> <!-- DONE -->
+            <div class="socials__social-box ">
                 <iframe id="tgw_5f8a158483ba88d70f8b4572" frameborder="0" scrolling="yes" horizontalscrolling="no" verticalscrolling="no" width="100%" height="100%" async></iframe><script>document.addEventListener("DOMContentLoaded",function(){document.getElementById("tgw_5f8a158483ba88d70f8b4572").setAttribute("src","https://tgwidget.com/channel/v2.0/?id=5f8a158483ba88d70f8b4572")})</script>
             </div>
             <div class="socials__social-box">

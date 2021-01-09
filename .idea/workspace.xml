@@ -1,45 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1600c623-f90e-4731-b33e-87f5f59ac036" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/images/04ef5e1743f2123165f573616c533885.max-165x165.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/images/Moscow-High-Quality-Wallpapers.2e16d0ba.fill-150x90.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/original_images/04ef5e1743f2123165f573616c533885.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="1600c623-f90e-4731-b33e-87f5f59ac036" name="Default Changelist" comment="BIG CHANGES">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templates/blog/blog_listing_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templates/blog/blog_listing_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/css/listing_page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0002_auto_20200927_2219.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0003_blogpage_theme.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0004_blogpage_author.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0005_auto_20200927_2244.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0006_auto_20200927_2244.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0007_auto_20200927_2247.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0008_auto_20200927_2247.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0009_auto_20200927_2252.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/0010_blogpage_preview_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/feed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/templates/blog/blog_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flex/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn1/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn1/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search/templates/search/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/search/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/static/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/home/static/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/home/home_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/home/home_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn1/feed.py" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/feed.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +32,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,7 +46,25 @@
       <updated>1610067816841</updated>
       <workItem from="1610067819397" duration="16140000" />
       <workItem from="1610084799324" duration="2008000" />
+      <workItem from="1610036599207" duration="2265000" />
+      <workItem from="1610223210136" duration="2000" />
+      <workItem from="1610223337325" duration="4562000" />
     </task>
+    <task id="LOCAL-00001" summary="BIG CHANGES">
+      <created>1610036768583</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610036768583</updated>
+    </task>
+    <task id="LOCAL-00002" summary="BIG CHANGES">
+      <created>1610036814879</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610036814879</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -96,5 +84,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="BIG CHANGES" />
+    <option name="LAST_COMMIT_MESSAGE" value="BIG CHANGES" />
   </component>
 </project>
