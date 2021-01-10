@@ -5,7 +5,17 @@
 
 {% block title %}Search{% endblock %}
 
+{% block extra_css %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+{% endblock extra_css %}
 
+{% block extra_js %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="{%  static 'js/script.min.js' %}"></script>
+    <script src="https://kit.fontawesome.com/4f7f467e89.js" crossorigin="anonymous"></script>
+    <script src="{%  static 'js/theme.js' %}"></script>
+{% endblock extra_js %}
 
 {% block content %}
     {% comment %}
@@ -18,30 +28,82 @@
     {% endcomment %}
 
     {% if search_results %}
-    <div style="padding-top: 60px">
-        <ul>
+    <div style="padding-top: 60px; margin-left: 10%" class="d-flex justify-content-between" >
+        <ul  >
             {% for result in search_results %}
+
                 <li>
-                    <h4><a href="{% pageurl result %}">{{ result }}</a></h4>
-                    {% if result.search_description %}
-                        {{ result.search_description }}
-                    {% endif %}
+                    <div class="card" style="max-width: 22rem ; margin: 50px ">
+          <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+               {% image result.preview_image fill-375x250 as image %}
+              <img src="{{ image.url }}" class="img-fluid">
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ result.title }}</h5>
+            <p class="card-text">
+              {{ result.intro }}
+            </p>
+               <p class="world-news__time">
+                  {{ result.date }}
+              </p>
+            <div style="padding-top: 10px">
+                <a href="{{ result.url }}" class="world-news__btn btn btn-small">Читать</a>
+            </div>
+          </div>
+        </div>
                 </li>
             {% endfor %}
         </ul>
 
-        {% if search_results.has_previous %}
-            <a href="{% url 'search' %}?query={{ search_query|urlencode }}&amp;page={{ search_results.previous_page_number }}">Previous</a>
-        {% endif %}
 
-        {% if search_results.has_next %}
-            <a href="{% url 'search' %}?query={{ search_query|urlencode }}&amp;page={{ search_results.next_page_number }}">Next</a>
-        {% endif %}
+
     {% elif search_query %}
-        No results found
+        <div align="center" style="padding-top: 100px">
+            <h1 class="article__text">ничего не найдено</h1>
+        </div>
     {% endif %}
     </div>
+    {% if search_results.paginator.num_pages > 1 %}
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="pagination">
+            {% if search_results.has_previous %}
+              <li class="page-item">
+                <a href="?page={{ search_results.previous_page_number }}" class="page-link">
+                  <span>&laquo;</span>
+                </a>
+              </li>
+            {% endif %}
 
-    <script src="{%  static 'js/theme.js' %}"></script>
+            {% for page_num in search_results.paginator.page_range %}
+              <li class="page-item {% if page_num == search_results.number %} active{% endif %}">
+                <a href="?page={{ page_num }}&query={{ search_query }}" class="page-link">
+                  {{ page_num }}
+                </a>
+              </li>
+            {% endfor %}
+
+            {% if search_results.has_next %}
+              <li class="page-item">
+                <a href="?page={{ search_results.next_page_number }}&query={{ search_query }}" class="page-link">
+                  <span>&raquo;</span>
+                </a>
+              </li>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% endif %}
+
+
+
+
+
 {% endblock %}
 

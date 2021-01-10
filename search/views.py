@@ -14,7 +14,6 @@ def search(request):
     # Search
     if search_query:
         search_results = BlogDetailPage.objects.live().search(search_query)
-        print(search_results)
         query = Query.get(search_query)
 
         # Record hit
@@ -23,7 +22,7 @@ def search(request):
         search_results = Page.objects.none()
 
     # Pagination
-    paginator = Paginator(search_results, 10)
+    paginator = Paginator(search_results, 5)
     try:
         search_results = paginator.page(page)
     except PageNotAnInteger:

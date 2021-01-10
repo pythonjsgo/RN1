@@ -18,6 +18,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {# Global stylesheets #}
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">   <!-- FONT LOAD -->
+
         <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
 
 
@@ -41,7 +45,7 @@
 
                      <div class="header__search search">
                          <form action="/search" method="get" id="form">
-                            <input name="query" type="text" class="search__input"  value="{{ search_query }}" placeholder="Поиск...">
+                            <input name="query" type="text" class="search__input"  value="{{ search_query }}" placeholder="Поиск..."   required="required" >
 
                          <button class="search__btn" id="search-btn" type="submit" > </button>
                          </form>

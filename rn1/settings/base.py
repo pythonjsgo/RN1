@@ -21,6 +21,9 @@ BASE_DIR = os.path.dirname(PROJECT_DIR)
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 
+
+
+
 # Application definition
 
 INSTALLED_APPS = [

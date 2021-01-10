@@ -3,35 +3,48 @@
 {%  load wagtailimages_tags %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
-    <link rel="stylesheet" href="{% static 'css/listing_page.css' %}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
 {% endblock extra_css %}
+
 {% block extra_js %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="{%  static 'js/script.min.js' %}"></script>
     <script src="https://kit.fontawesome.com/4f7f467e89.js" crossorigin="anonymous"></script>
     <script src="{%  static 'js/theme.js' %}"></script>
 {% endblock extra_js %}
 
 
-
 {% block content %}
-    <div class="row" style="padding-top: 60px">
-        <div class="col-md-7 col-lg-7">
-			<ul class="media-list main-list">
-               {% for post in posts %}
-                   <li class="media">
-                            <a class="pull-left" href="#">
-                                {% image post.preview_image fill-150x90 as image %}
-                              <img class="media-object" src="{{ image.url }}" alt="">
-                            </a>
-                            <div class="media-body">
-                                <a href="{{ post.url }}" ><h4 class="media-heading world-news__text">{{ post.title }}</h4></a>
-                              <p class="by-author">{{ post.author }}</p>
-                            </div>
-                          </li>
-                {% endfor %}
-            </ul>
+    <div style="padding-top: 60px; margin-left: 10%" class="d-flex justify-content-between" >
+        <ul  >
+            {% for result in posts %}
+
+                <li>
+                    <div class="card" style="max-width: 22rem ; margin: 50px ">
+          <div class="bg-image hover-overlay ripple ripple-surface ripple-surface-light" data-mdb-ripple-color="light">
+               {% image result.preview_image fill-375x250 as image %}
+              <img src="{{ image.url }}" class="img-fluid">
+            <a href="#!">
+              <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+            </a>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{ result.title }}</h5>
+            <p class="card-text">
+              {{ result.intro }}
+            </p>
+              <p class="world-news__time">
+                  {{ result.date }}
+              </p>
+            <div style="padding-top: 10px">
+                <a href="{{ result.url }}" class="world-news__btn btn btn-small">Читать</a>
+            </div>
+          </div>
         </div>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
 
   {# Only show pagination if there is more than one page to click through #}

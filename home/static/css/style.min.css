@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300; 400;700&display=swap');
+
+input:focus, textarea:focus, select:focus{     /*mycode*/
+        outline: none;
+    }
+
 html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%
@@ -654,6 +659,12 @@ body {
 }
 
 .header__social-link {
+	 position: relative;  /* custom code */
+	top: 0;
+	transition: top ease 0.3s;
+
+
+
 	border: .0625rem solid rgba(148, 148, 148, .549);
 	border-radius: .625rem;
 	width: 2.625rem;
@@ -670,6 +681,11 @@ body {
 	color: #787f84
 }
 
+.header__social-link:hover {
+	top: -10px;
+
+}
+
 .header__social-link:active {
 	-webkit-transform: scale(.98);
 	-ms-transform: scale(.98);
@@ -679,6 +695,7 @@ body {
 .header__social-link.vk:hover {
 	color: #4c75a3
 }
+
 
 .header__social-link.facebook:hover {
 	color: #3b5998
@@ -1452,7 +1469,17 @@ body.black .up-btn {
 }
 
 .article__text {
+	font-size: 1.5em;
+	padding-left: 10px;
+	padding-right: 30px;
 	line-height: 1.5
+	font-style: normal;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+.article__text {  /* FONT */
+	font-family: 'Raleway', sans-serif;
 }
 
 .article__text a {
