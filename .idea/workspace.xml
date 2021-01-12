@@ -4,7 +4,7 @@
     <list default="true" id="1600c623-f90e-4731-b33e-87f5f59ac036" name="Default Changelist" comment="SEARCH &amp; POSTS LIST CARD REDESIGN">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search/templates/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rn1/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +47,9 @@
       <workItem from="1610036599207" duration="2265000" />
       <workItem from="1610223210136" duration="2000" />
       <workItem from="1610223337325" duration="9252000" />
-      <workItem from="1610239038732" duration="11930000" />
+      <workItem from="1610239038732" duration="13989000" />
+      <workItem from="1610472059493" duration="89000" />
+      <workItem from="1610477372543" duration="2403000" />
     </task>
     <task id="LOCAL-00001" summary="BIG CHANGES">
       <created>1610036768583</created>
@@ -77,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610250679490</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="SEARCH &amp; POSTS LIST CARD REDESIGN">
+      <created>1610252165084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610252165084</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
