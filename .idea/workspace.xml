@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1600c623-f90e-4731-b33e-87f5f59ac036" name="Default Changelist" comment="SEARCH &amp; POSTS LIST CARD REDESIGN">
+    <list default="true" id="1600c623-f90e-4731-b33e-87f5f59ac036" name="Default Changelist" comment="meta for TG">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rn1/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/rn1/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +49,8 @@
       <workItem from="1610239038732" duration="13989000" />
       <workItem from="1610472059493" duration="89000" />
       <workItem from="1610477372543" duration="2403000" />
+      <workItem from="1610485056983" duration="664000" />
+      <workItem from="1625873257008" duration="1207000" />
     </task>
     <task id="LOCAL-00001" summary="BIG CHANGES">
       <created>1610036768583</created>
@@ -86,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610252165084</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="meta for TG">
+      <created>1610485084356</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610485084357</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +117,7 @@
     <MESSAGE value="BIG CHANGES" />
     <MESSAGE value="div class=&quot;socials__wrapper d-none d-sm-flex&quot;&gt; &lt;!-- DONE --&gt;" />
     <MESSAGE value="SEARCH &amp; POSTS LIST CARD REDESIGN" />
-    <option name="LAST_COMMIT_MESSAGE" value="SEARCH &amp; POSTS LIST CARD REDESIGN" />
+    <MESSAGE value="meta for TG" />
+    <option name="LAST_COMMIT_MESSAGE" value="meta for TG" />
   </component>
 </project>
